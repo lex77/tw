@@ -1,0 +1,35 @@
+TW_CFG_GLOBAL = {
+    PATH            = "~/scripts/lua",
+    AVA_FONT_T      = "calibri.ttf",
+    AVA_FONT_NAME   = "calibri.ttf",
+    YAXML           = "http://export.yandex.ru/weather-ng/forecasts/",
+    DLTIMEOUT       = "10800",
+}
+
+TW_CFG_CITY = {
+	-- Город
+    [1] = {
+        name_en 		=   "Moscow",
+        name_ru 		=   "Москва",
+        auth            = {
+            consumer_key 	    = "<CONSUMER_KEY>",
+            consumer_secret     = "<CONSUMER_SECRET>",
+            oauth_token         = "<OAUTH_TOKEN>",
+            oauth_token_secret  = "<OAUTH_TOKEN_SECRET>"
+        },
+        place_id   =        "<TWITTER_PLACE_ID>",
+        lat        =        "<LAT>",
+        long       =        "<LOG>",
+        ya_city_id =        "<yandex_city_id>",
+        hours      = {
+            ["01"]      = {"now","morning"},
+            ["07"]      = {"first","now","day","evening"},
+            ["09"]      = {"now"},
+            ["12"]      = {"now","day"},
+            ["15"]      = {"now"},
+            ["18"]      = {"now","evening","night"},
+            ["20"]      = {"now"},
+            ["22"]      = {"now","night","tm_morning","tm_day"}
+        },
+    },
+}
